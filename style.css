@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #2c8cc4;
+    --second-color: #2274A5;
+    --third-color: #2c8cc4;
+    --fourth-color: #3fb1f3;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('SourceSansPro-Regular.ttf') format('truetype');
+}
+
+body {
+    background: url('./bg.png');
+    margin: unset;
+    overflow: hidden;
+}
+
+.steam-text-opacity {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+}
+
+a {
+    font-family: 'SourceSansPro-Bold', sans-serif;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-decoration: none;
+
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+}
+
+a:hover {
+    color: var(--fourth-color);
+}
+
+#website {
+    position: fixed;
+    text-shadow: 0px 0px 40px var(--primary-color);
+    top: 108px;
+    left: 150px;
+}
+
+#discord {
+    position: fixed;
+    height: 75px;
+    left: 1180px;
+    top: 40px;
+    filter: drop-shadow(0px 0px 40px var(--primary-color));
+    z-index: 2;
+}
+
+#instagram {
+    position: fixed;
+    height: 78px;
+    left: 1075px;
+    top: 36px;
+    filter: drop-shadow(0px 0px 40px var(--primary-color));
+    z-index: 2;
+}
+
+#steam {
+    position: fixed;
+    height: 65px;
+    left: 1180px;
+    top: 145px;
+    filter: drop-shadow(0px 0px 40px var(--primary-color));
+    z-index: 2;
+}
+
+#launch {
+    height: 70px;
+    width: 275px;
+}
+
+
+#launch-text {
+    font-family: 'SourceSansPro-Bold', sans-serif;
+    color: white;
+    box-shadow: 0px 0px 40px var(--second-color);
+}
+
+#user-svg {
+    height: 42px;
+    margin: 20px;
+    color: white;
+}
+
+#playercount-text {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    color: white;
+    margin: 20px;
+    font-size: 27px;
+}
+
+#queue-svg {
+    height: 42px;
+    margin: 20px;
+    color: white;
+}
+
+#queue-text {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    color: white;
+    margin: 20px;
+    font-size: 27px;
+}
+
+#server-svg {
+    color: white;
+    width: 100px;
+    height: 42px;
+}
+
+#server-text {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    color: white;
+    font-size: 27px;
+}
+
+#launchbtn {
+    color: white;
+    font-size: 28px;
+    padding: 11.2px 33.34px;
+    background: var(--second-color);
+
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#launchbtn:hover {
+    background: var(--third-color);;
+}
+
+.footer {
+    max-width: 1200px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    clear: left;
+    margin-top: 650px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.middle-left {
+    display: flex;
+    align-items: center;
+}
+
+.middle-right {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+#steam-text {
+    font-family: 'SourceSansPro-Bold', sans-serif;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    top: 125px;
+    left: 1075px;
+    font-size: 30px;
+}
+
+/* #steam-redirect:hover + #steam-text {
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+} */
+
+.spinner-box {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 1061px;
+    top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    opacity: 0;
+  }
+  
+  .circle-border {
+    width: 76px;
+    height: 76px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(80,204, 117,0.1) 33%, rgba(63, 177, 243, 1) 100%);
+  }
+  
+  .circle-core {
+    width: 100%;
+    height: 100%;
+    background-color: #2e323c;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
+
